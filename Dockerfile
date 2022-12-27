@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-RUN apk add --no-cache \
+RUN VERSION=3.7.3-r1 && \
+	apk add --no-cache \
         postfix \
         ca-certificates \
         libsasl \
@@ -12,6 +13,7 @@ RUN apk add --no-cache \
         cyrus-sasl-login \
         cyrus-sasl-ntlm \
         cyrus-sasl-scram && \
+	VERSION= && \
     mkdir /etc/sasl2 && \
     touch /etc/postfix/aliases && \
     postmap /etc/postfix/aliases
