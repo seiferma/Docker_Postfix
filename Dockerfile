@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN VERSION=3.7.3-r1 && \
+RUN VERSION=3.7.4-r0 && \
 	apk add --no-cache \
         postfix \
         ca-certificates \
