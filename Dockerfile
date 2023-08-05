@@ -1,8 +1,8 @@
 FROM alpine:latest
 
-RUN VERSION=3.7.4-r0 && \
+RUN VERSION=3.8.1-r0 && \
 	apk add --no-cache \
-        postfix \
+        postfix=$VERSION \
         ca-certificates \
         libsasl \
         cyrus-sasl \
