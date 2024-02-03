@@ -1,5 +1,5 @@
 variable "VERSION" {
-  default = "3.8.4-r0"
+  default = "3.8.5-r0"
 }
 
 group "default" {
